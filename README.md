@@ -62,7 +62,7 @@ by running:
 ### Updating MSC-GUI
 Periodically Minecraft Server Control GUI is updated to address bug fixes
 and add new features. The easiest way to fetch the latest update, assuming you
-used [the easiest way to install the script](#download), first
+used [the easiest way to install the script](#download), is to first
 `cd` into the folder where you downloaded MSC-GUI. Then, type:
 
     git pull
