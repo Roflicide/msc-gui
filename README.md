@@ -6,7 +6,7 @@
 * [Installation](#installation)
   * [Download](#download)
   * [Configuration](#configuration)
-  * [Updating MSC-GUI](#update-msc-gui)
+  * [Updating MSC-GUI](#updating-msc-gui)
 * [Getting started guide](#getting-started-guide)
 * [License](LICENSE)
 * [Disclaimer](#disclaimer)
