@@ -6,7 +6,7 @@
 * [Installation](#installation)
   * [Download](#download)
   * [Configuration](#configuration)
-  * [Updating MSC-GUI](#update)
+  * [Updating MSC-GUI](#update-msc-gui)
 * [Getting started guide](#getting-started-guide)
 * [License](LICENSE)
 * [Disclaimer](#disclaimer)
@@ -59,11 +59,11 @@ by running:
 
     sudo make install
     
-### Updating MSCS
-Periodically Minecraft Server Control Script is updated to address bug fixes
+### Updating MSC-GUI
+Periodically Minecraft Server Control GUI is updated to address bug fixes
 and add new features. The easiest way to fetch the latest update, assuming you
 used [the easiest way to install the script](#downloading-the-script), first
-`cd` into the folder where you downloaded MSCS. Then, type:
+`cd` into the folder where you downloaded MSC-GUI. Then, type:
 
     git pull
 
@@ -71,7 +71,7 @@ You can alternatively use [one of the other methods](#download)
 to download the latest version.  Just `cd` into the folder containing the MSCS
 download to continue.
 
-Once you have the latest version of MSCS downloaded, type:
+Once you have the latest version of MSC-GUI downloaded, type:
 
     sudo make update
 
