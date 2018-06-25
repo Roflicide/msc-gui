@@ -9,7 +9,7 @@
   * [Updating MSC-GUI](#updating-msc-gui)
 * [Getting started](#getting-started)
   * [Basic usage](#basic-usage)
-  * [Run web server in the background](#run-web-server-in-the-background)
+  * [Start web server in the background](#start-web-server-in-the-background)
   * [Stop web server in the background](#stop-web-server-in-the-background)
 * [License](LICENSE)
 * [Disclaimer](#disclaimer)
@@ -104,7 +104,7 @@ on your machine.
     
 To close the web server, press Ctrl + C (`^C`).
 
-### Run web server in the background
+### Start web server in the background
 You will most likely want to run the web server in the background so
 you can close your terminal window without stopping the server. 
 
