@@ -128,7 +128,7 @@ now close the terminal window without your web server stopping.
 ### Stop web server in the background
 If you want to stop the web server that is running in the background 
 as detailed in the [Getting started](#getting-started) section, you will have to 
-1) stop the web server and 2) delete the screen.
+1. stop the web server and 2. delete the screen.
 
 First, re-attach to the screen running the web server:
 (the command below assumes you named the screen `mscgui-server` as 
