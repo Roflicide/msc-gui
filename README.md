@@ -111,6 +111,8 @@ you can close your terminal window without stopping the server.
 Fortunately, `screen` is a tool available on most Unix distributions that can be 
 used to accomplish this. 
 
+First, if the server is currently running, press Ctrl + C to stop it.
+
 To start a new virtual terminal (on which you will run the server) type:
 
     screen -S mscgui-server
