@@ -99,7 +99,8 @@ To specify a different port, add the `-l` argument:
      # Start the web server on port 8080
     ./msc-gui daemon -l http://*:8080 
     
-Once running, you can visit the dashboard by navigating to `http://localhost:3000` on your machine.
+Once running, you can visit the dashboard by navigating to [http://localhost:3000](http://localhost:3000)
+on your machine.
     
 To close the web server, press Ctrl + C (`^C`).
 
@@ -127,8 +128,8 @@ now close the terminal window without your web server stopping.
 
 ### Stop web server in the background
 If you want to stop the web server that is running in the background 
-as detailed in the [Getting started](#getting-started) section, you will have to 
-1. stop the web server and 2. delete the screen.
+as detailed in the [Getting started](#getting-started) section, 
+you will have to 1. stop the web server and 2. delete the screen.
 
 First, re-attach to the screen running the web server:
 (the command below assumes you named the screen `mscgui-server` as 
