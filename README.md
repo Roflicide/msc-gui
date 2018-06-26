@@ -8,9 +8,8 @@
   * [Configuration](#configuration)
   * [Updating MSC-GUI](#updating-msc-gui)
 * [Getting started](#getting-started)
-  * [Basic usage](#basic-usage)
-  * [Start web server in the background](#start-web-server-in-the-background)
-  * [Stop web server in the background](#stop-web-server-in-the-background)
+  * [Start server](#start-server)
+  * [Stop server](#stop-server)
 * [License](LICENSE)
 * [Disclaimer](#disclaimer)
 
@@ -86,62 +85,24 @@ Once you have the latest version of MSC-GUI downloaded, type:
 
 ## Getting started
 
-### Basic usage
+### Start server
 Navigate to the directory where you downloaded the script.
 Then, to start the web server, run:
  
-    ./msc-gui daemon
+    /usr/bin/hypnotoad ./msc-gui 
     
-By default, this will start the web server on port 3000. 
-
-To specify a different port, add the `-l` argument:
-
-     # Start the web server on port 8080
-    ./msc-gui daemon -l http://*:8080 
+This will start the web server (as a background service) on port 8080. 
     
-Once running, you can visit the dashboard by navigating to [http://localhost:3000](http://localhost:3000)
+Once running, you can visit the dashboard by navigating to [http://localhost:8080](http://localhost:8080)
 on your machine.
     
 To close the web server, press Ctrl + C (`^C`).
 
-### Start web server in the background
-You will most likely want to run the web server in the background so
-you can close your terminal window without stopping the server. 
+### Stop server
 
-Fortunately, `screen` is a tool available on most Unix distributions that can be 
-used to accomplish this. 
+To stop the web server, run:
 
-First, if the server is currently running, press Ctrl + C to stop it.
-
-To start a new virtual terminal (on which you will run the server) type:
-
-    screen -S mscgui-server
-   
-Your terminal will clear and you'll be entered into a new window.
-You can now start the server: (see [Usage](#usage) for more options)
-
-    ./msc-gui daemon
-
-Finally, detach from this screen by pressing `Ctrl + A + D`.
-
-Upon doing so, you will be returned to your main terminal window--
-and the web server will remain running in the background. You can 
-now close the terminal window without your web server stopping.
-
-### Stop web server in the background
-If you want to stop the web server that is running in the background 
-as detailed in the [Getting started](#getting-started) section, 
-you will have to 1. stop the web server and 2. delete the screen.
-
-First, re-attach to the screen running the web server:
-(the command below assumes you named the screen `mscgui-server` as 
-detailed in [Getting started](#getting-started))
-
-    screen -r mscgui-server
-
-Then, press Ctrl + C to stop the server.
-
-Finally, detach and delete the screen by pressing Ctrl + A and typing `:quit`.
+    `systemctl stop msc-gui`
 
 ## License
 
